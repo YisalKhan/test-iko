@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-4">
+      <h3 class="title"><a href="#">{{ product.name }}</a></h3>
+          <div class="price">{{ product.price }}</div>
+          <div class="details">
+            <h5>Size:</h5>
+            <h6>{{ product.size }}</h6>
+            <h5>SKU:</h5>
+            <h6>{{ product.sku }}</h6>
+            <h5>Color:</h5>
+            <h6>{{ product.color }}</h6>
+          </div>
+    </div>
+    <div class="col-md-4 product-image">
+      <a>
+        <img class="pic" src="{{ product.pic1}}" alt="">
+      </a>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>

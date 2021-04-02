@@ -1,0 +1,21 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3 col-sm-6" *ngFor="let product of productList; let i = index;">
+      <div class="product-grid">
+        <div class="product-image">
+          <a [routerLink]="['/product-detail', product.id]" >
+            <img class="pic-1" src="{{ product.pic1 }}" alt="">
+            <img class="pic-2" src="{{ product.pic2 }}" alt="">
+          </a>
+        </div>
+        <div class="product-content">
+          <h3 class="title"><a href="#">{{ product.name }}</a></h3>
+          <div class="price">{{ product.price }}
+            <!-- <span>$20.00</span> -->
+          </div>
+          <a class="add-to-cart" href="">+ Add To Cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
